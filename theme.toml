@@ -1,15 +1,15 @@
-name = "Hugo Novela"
+name = "Frieserlabs blog"
 license = "MIT"
-licenselink = "https://github.com/forestryio/hugo-theme-novela/blob/master/LICENSE"
-description = "A Hugo port of the Novela theme by Narative"
-homepage = "https://hugo-novela-forestry.netlify.com/"
+licenselink = "https://github.com/frieserlabs/hugo-theme-novela/blob/master/LICENSE"
+description = "A Hugo theme for Frieserlabs blog"
+homepage = "blog.frieserlabs.dev"
 tags = ["blog"]
 features = ["dark mode", "grid view"]
 min_version = "0.65.0"
 
 [author]
-    name = "The New Dynamic"
-    homepage = "https://www.thenewdynamic.com/"
+    name = "frieser"
+    homepage = "github.com/frieser"
 
 # If porting an existing theme
 [original]

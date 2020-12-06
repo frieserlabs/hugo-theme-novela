@@ -10,6 +10,9 @@
         {{ .Content }}
     </article>
 
+    <comment class="articleComments">
+        {{ template "_internal/disqus.html" . }}
+    </comment>
 
     {{ partial "article/next.html" . }}
 </section>

@@ -21,6 +21,8 @@
 @import "article.scss";
 @import "authors.scss";
 @import "paginator.scss";
+@import "post-link.scss";
+@import "comments.scss";
 
 
 /**
@@ -37,7 +39,7 @@
 }
 
 @font-face {
-  font-family: "-apple-system", "BlinkMacSystemFont", "San Francisco",
+  font-family: "futura-pt","-apple-system", "BlinkMacSystemFont", "San Francisco",
     "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto", "Segoe UI",
     "Arial", sans-serif;
   font-weight: 400;

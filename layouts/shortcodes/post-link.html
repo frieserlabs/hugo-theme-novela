@@ -1,0 +1,24 @@
+{{ $slug:=.Get 0}}
+{{ with .Site.GetPage $slug }}
+    <div class="post-link">
+        <a href="{{.Permalink}}" class="article-link">
+            <div class="article-data-outer">
+                <div class="image-container">
+                    <img src="{{ .Params.Hero }}" class="article-image"/>
+                </div>
+                <div class="article-data">
+                    <h2 class="article-title">
+                        {{ .Params.Title }}
+                    </h2>
+                    <p class="article-excerpt">
+                        {{ .Params.Excerpt }}
+                    </p>
+                    <div class="article-metadata">
+                        {{ .Date.Format "January 2, 2006" }}
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    </div>
+{{ end }}
