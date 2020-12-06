@@ -132,6 +132,13 @@
     }
 }
 
+/*PHONE */
+@media screen and (max-width: 540px){
+    .nav-container{
+        padding-top: 30px;
+    }
+}
+
 .logo-link{
     position: relative;
     display: -webkit-box;
@@ -172,6 +179,7 @@
 }
 
 .nav-controls{
+    padding-top: 16px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -184,6 +192,7 @@
 /*PHABLET*/
 @media screen and (max-width: 540px){
     .nav-controls{
+        padding-top: 8px;
         right: -5px;
     }
 }
