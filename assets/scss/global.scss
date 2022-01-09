@@ -210,6 +210,13 @@ img.Image__Zoom ~ div {
   }
 }
 
+svg{
+  -webkit-animation-name: image-load-in;
+          animation-name: image-load-in;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+
 img{
   max-width: 100%;
   -webkit-animation-name: image-load-in;
