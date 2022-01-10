@@ -24,7 +24,7 @@
               <div class="article-data-outer">
                 <div class="image-container">
                     {{ $image :=  (.Resources.GetMatch "images/hero.jpg").Resize "700x webp" }}
-                    <img width="700" height="100" src="{{ $image.RelPermalink }}" class="article-image"  />
+                    <img width="700" height="100" src="{{ $image.RelPermalink }}" alt="{{ $article.Params.title }}" class="article-image"  />
                 </div>
                 <div class="article-data">
                   <h2 class="article-title">
