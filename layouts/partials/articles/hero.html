@@ -15,5 +15,5 @@
     </div>
 </Section>
 
-{{ $script := resources.Get "js/toggleLayout.js" }}
+{{ $script := resources.Get "js/toggleLayout.js" | minify | fingerprint "md5" }}
 <script src="{{ $script.RelPermalink }}"></script>

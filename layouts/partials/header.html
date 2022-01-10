@@ -27,11 +27,11 @@
 </div>
 </Section>
 
-{{ $script := resources.Get "js/toggleLogos.js" }}
+{{ $script := resources.Get "js/toggleLogos.js" | minify | fingerprint "md5" }}
 <script src="{{ $script.RelPermalink }}"></script>
 
-{{ $script := resources.Get "js/toggleColors.js" }}
+{{ $script := resources.Get "js/toggleColors.js" | minify | fingerprint "md5" }}
 <script src="{{ $script.RelPermalink }}"></script>
 
-{{ $script := resources.Get "js/copyUrl.js" }}
+{{ $script := resources.Get "js/copyUrl.js" | minify | fingerprint "md5" }}
 <script src="{{ $script.RelPermalink }}"></script>

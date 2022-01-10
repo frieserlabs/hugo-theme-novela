@@ -35,5 +35,5 @@
   {{ partial "paginator/paginator.html" . }}
 </section>
 
-{{ $script := resources.Get "js/toggleBorder.js" }}
+{{ $script := resources.Get "js/toggleBorder.js" | minify | fingerprint "md5" }}
 <script src="{{ $script.RelPermalink }}"></script>
