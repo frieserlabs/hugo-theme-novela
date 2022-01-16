@@ -4,8 +4,8 @@
         <a href="{{.Permalink}}" class="article-link">
             <div class="article-data-outer">
                 <div class="image-container">
-                    {{ $image :=  (.Resources.GetMatch "images/hero.jpg").Resize "700x webp" }}
-                    <img width="700" height="100" src="{{ $image.RelPermalink }}" alt="{{ .Params.title }}" class="article-image"  />
+                    {{ $image :=  (.Resources.GetMatch "images/hero.jpg").Resize "420x webp" }}
+                    <img width="420" height="280" src="{{ $image.RelPermalink }}" alt="{{ .Params.title }}" class="article-image"  />
                 </div>
                 <div class="article-data">
                     <h2 class="article-title">

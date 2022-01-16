@@ -37,7 +37,8 @@ of the whole section and append them to our $next slice. */}}
                 {{ if not $index}} id="article-link-bigger"{{ end }}>
                     <div>
                         <div class="image-container">
-                            <img src="{{ $article.Params.hero }}" class="article-image" />
+                            {{ $image :=  ($article.Resources.GetMatch "images/hero.jpg").Resize "620x webp" }}
+                            <img width="620" height="280" src="{{ $image.RelPermalink }}" alt="{{ $article.Params.title }}" class="article-image"  />
                         </div>
                         <div>
                             <h2 class="article-title">
